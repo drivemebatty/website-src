@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hydra - projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 5px 0;
+            text-align: center;
+            border-bottom: 0px solid #30363d;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #58a6ff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .project {
+            background-color: #161b22;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-6px);
+            background-color: #1f242a;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .project h2 {
+            color: #f0883e;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .project p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        /* Button Styles */
+        .links a {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            background: linear-gradient(135deg, #58a6ff, #1f6feb);
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .links a:hover {
+            background: linear-gradient(135deg, #1f6feb, #58a6ff);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+            transform: scale(1.05);
+        }
+
+        .links a:focus {
+            outline: 3px solid #f0883e;
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>hydra - projects</h1>
+</header>
+
+<div class="container">
+    <div class="project">
+        <h2>Vone Tweaks</h2>
+        <strong>Vone 4.0 coming soon... </strong>
+    </div>
+
+    <div class="project">
+        <h2>Guess The Number</h2>
+        <div class="links">
+            <a href="http://cdn.hydragotcash.us.to/projects/guess-the-number/play.html" target="_blank">Play</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Pass Generator</h2>
+        <div class="links">
+            <a href="http://cdn.hydragotcash.us.to/projects/passgen.exe" target="_blank">Download</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Ping Pong</h2>
+        <div class="links">
+            <a href="http://cdn.hydragotcash.us.to/projects/PingPong-x64.zip" target="_blank">Download</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Rizzer AI</h2>
+        <div class="links">
+            <a href="http://cdn.hydragotcash.us.to/projects/rizzer-ai/use.html" target="_blank">Use Now</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
