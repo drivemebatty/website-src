@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            color: #ffffff;
+        }
+        .container {
+            text-align: center;
+        }
+        input[type="password"] {
+            padding: 10px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        a {
+            display: none;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Enter Password to Download</h2>
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkPassword()">Submit</button>
+    <p id="message"></p>
+    <a id="downloadLink" href="http://hydragotcash.us.to/PORTUGAL.pptx" download>Download File</a>
+</div>
+
+<script>
+    function checkPassword() {
+        const password = document.getElementById('password').value;
+        const correctPassword = 'skibidi';
+        const downloadLink = document.getElementById('downloadLink');
+        const message = document.getElementById('message');
+
+        if (password === correctPassword) {
+            message.textContent = 'Password correct. Click the button below to download the file.';
+            message.style.color = 'green';
+            downloadLink.style.display = 'inline-block';  // Show the download link
+        } else {
+            message.textContent = 'Incorrect Password. Try again.';
+            message.style.color = 'red';
+            downloadLink.style.display = 'none';  // Hide the download link if the password is incorrect
+        }
+    }
+</script>
+
+</body>
+</html>
